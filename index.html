@@ -1,0 +1,1038 @@
+<!--
+
+
+Hit RUN to see this project in action!
+
+Feel free to edit the HTML and CSS to make it your own. You can also check the README.md file to know more.
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>elyas ganteng</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        
+        <div class="info-content">
+          <h1 class="name" title="Elyas Hafiddina">Elyas Hafiddina</h1>
+
+          <p class="title">Pelajar Paling Ganteng</p>
+          <p class="name" id="clock"></p>
+	<script>
+	   setInterval(customClock, 500);
+	   function customClock() {
+	       var time = new Date();
+	       var hrs = time.getHours();
+	       var min = time.getMinutes();
+	       var sec = time.getSeconds();
+	       
+	       document.getElementById('clock').innerHTML = hrs + ":" + min + ":" + sec;
+	         }
+	   
+  </script>         
+        </div>
+        
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Tampilkan Kontak</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto: elyas1065@gmail.com" class="contact-link">elyas1065@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Instagram</p>
+
+              <a href="https://Instagram.com/elyas_tzy" class="contact-link">elyas_tzy</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2005-06-10">June 10, 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sukoharjo, Jawa Tengah, Indonesia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://web.facebook.com/elyas.hafiddina/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://api.whatsapp.com/send?phone=6281917677135&text=elyas+kamu+ganteng+banget" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://instagram.com/elyas_tzy" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li
+            <li class="social-item">
+              <a href="https://github.com/Paquito1923" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+              
+            </li>
+          <li class="social-item">
+              <a href="https://www.tiktok.com/@elyashafiddina" class="social-link">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+              
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+  
+            
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Quotes</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Info</button>
+          </li>
+          
+          <!--<li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+-->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+
+            <header>
+              <h2 class="h2 article-title">Tentang Saya</h2>
+            </header>
+
+            <section class="about-text">
+              <p>
+                Hai, Saya Elyas Hafiddina dan saya adalah seorang santri di PONPES NURUL AZIZAH.
+              </p>
+
+              <p>
+                Saya adalah seorang conten creator yang belum berpengalaman dalam banyak hal, saya ingin terus belajar dan mendalami ilmu ilmu perkembangan tekhnologi untuk memajukan bangsa dan negara. 🗿
+              </p>
+              <audio autoplay loop controls>
+        <source src="https://raw.githubusercontent.com/Paquito1923/save/main/kill bill (gustixa).mp3" type="audio/mpeg">audio background
+              </audio>
+            <p>play for music background</p>        
+
+
+        <!--
+          - service
+        -->
+
+              
+        <section class="service">
+
+          <h3 class="h3 service-title">Hobi</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/barbel.png
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Work Out</h4>
+
+                <p class="service-item-text">
+                  Olahraga yang mudah di lakukan, dan bisa di laksanakan di mana saja.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/baso.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Kuliner</h4>
+
+                <p class="service-item-text">Makan? suatu hal yang bisa merubah mood kita menjadi bagus. Btw saya suka bakso, kalau duitnya nganggur mending beliin saya😆
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">mempelajari hapir semua bentuk aplikasi dan mencoba mengembangkannya.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  membuat foto foto estetok
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+          
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Teman Dekat</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>?????</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    orangnya biasa aja, tapi saya senang setiap bertemu/ kontak dengannya, sehingga saya merasa bahwa dia orang yang spesial, walaupun orangnya galak, gembeng, gampang bedmud, saya tetap menganggapnya sebagai teman terdekat saya🗿👍
+                  </p>
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Pesan buat kamu</h4>
+                <time datetime="2005-05-13">tuhan ga bakal ngasi ujian melebihi batas kemampuan kita, jika ujian kita berat berarti kita kuat</time>
+
+                </div
+                </div>
+              </div>
+            <center><a href="flower.html" class="navbar-link">🎁hadiah buat kamu</a></center>
+            </li>
+             
+          </ul>         
+
+        </section>        
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>fuck</h4>
+
+              <time datetime="2005-05-13">bukan siapa siapa</time>
+
+              <div data-modal-text>
+                
+              </div>
+               </div>
+            
+            
+            </section>   
+
+        <!--
+          - clients
+        -->
+<!--
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>-->
+          
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PONPES NURUL AZIZAH</h4>
+
+              <span>2023 — ?</span>
+
+              <p class="timeline-text">
+                Belajar ilmu agama :)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SMK 6 SUKOHARJO</h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+                Masuk di jurusan multimedia. Belajar Pemrogaman dasar, Desain Grafis, Photography, Tekhnik video, dll.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SMPN 1 GROGOL</h4>
+
+              <span>2018 — 2020</span>
+
+              <p class="timeline-text">
+                 Ilmu reproduksi?
+              </p>
+
+            </li>
+
+          <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SD LANGENHARJO 01</h4>
+
+              <span>2012-2018</span>
+
+              <p class="timeline-text">
+                belajar ilmu dasar
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Pengalaman</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ngebadut</h4>
+
+              <span>ahaha</span>
+
+              <p class="timeline-text">
+  yang penting ga wibu
+              </p>
+
+              <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Juara 1</h4>
+
+              <span>pernah juara 1 sebagai</span>
+
+              <p class="timeline-text">orang paling kalem + sabar + gapernah ngomong kasar + baik + tidak sombong + ganteng + rajin menabung
+              </p>
+
+            </li>
+
+            
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="10">10%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 10%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Photography</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Mencintaimu</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>         
+            
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      
+
+            <!--
+        - #QUOTES
+      -->
+
+        <article class="quotes" data-page="quotes">
+
+          <header>
+            <center><h2 class="h2 service-title">"QUOTES  🗿
+"</h2></center>
+          </header>
+
+          <section class="about-text">
+            <center><p>"Segala sesuatu memiliki kesudahan, yang sudah berakhir biarlah berlalu dan yakinlah semua akan baik-baik saja"
+            </p>
+<br>
+            <p>
+              "Jika kamu tak menemukan buku yang kamu cari di rak, maka tulislah sendiri"
+            </p><br>
+              <p>
+              "Tersenyumlah yang lebar, jangan perlihatkan kesedihan, hidup harus di jalani dengan bahagia bukan tangis air mata"</p><br>
+              <p>"jika sudah tidak ada bahu untuk bersandar, masi ada batagor untuk di dahar, utamakan sarapan bukan harapan"</p><br>
+              <p>"Hidup tak selamanya tentang pacar"</p><br>
+              <p>"Sejatinya seseorang hanya suka menilai buruk orang lain, namun tidak suka dirinya dinilai buruk. Suka mengritik orang lain, namun tidak suka dikritik orang lain"</p><br>
+              <p>"Gak peduli  orang butuh kita atau nggak yang penting kita selalu ada saat mereka butuh"</p><br>
+              <p>"Percayalah bahwa kamu adalah alasan seseorang untuk tersenyum"</p><br>
+              <p>"agar silaturahmi tidak terputus, bolehkah kita mulai serius?"</p><br>
+              
+
+              
+              </center>
+          </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #INFO
+      -->
+
+      <article class="info" data-page="info">
+
+        <header>
+          <h2 class="h2 article-title">Sharelok nih</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7907.902395049638!2d112.1959203!3d-7.6883868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7842e1655c232f%3A0x24c6e7673bbdc988!2sPondok%20Pesantren%20Nurul%20Azizah%20(%20LDII%20)!5e0!3m2!1sid!2sid!4v1701828650010!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+
+        
+
+<section class=about-text>
+            
+              <h2 class="h2 article-title">INFO</h2>
+            
+          
+          <h1 id="batteryStatus"></h1 >
+
+  <script>
+    // Mengambil informasi baterai
+    navigator.getBattery().then(function(battery) {
+      // Memperbarui tampilan persentase baterai
+      function updateBatteryStatus() {
+        document.getElementById('batteryStatus').textContent = 'Battery Level: ' + Math.floor(battery.level * 100) + '%';
+      }
+
+      // Memanggil fungsi pertama kali saat halaman dimuat
+      updateBatteryStatus();
+
+      // Memperbarui persentase baterai saat ada perubahan
+      battery.addEventListener('levelchange', updateBatteryStatus);
+    });
+  </script>
+
+  
+  <h1 id="signalStrength">h1
+  </h1>
+
+  <script>
+    // Mengambil informasi kekuatan sinyal
+    window.addEventListener('load', () => {
+      const signalDiv = document.getElementById('signalStrength');
+
+      // Memperbarui tampilan kekuatan sinyal
+      function updateSignalStrength() {
+        const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+        if (connection) {
+          signalDiv.textContent = 'Kekuatan Sinyal: ' + (connection.rtt ? connection.rtt + ' ms' : 'Tidak tersedia');
+        } else {
+          signalDiv.textContent = 'Informasi sinyal tidak didukung pada peramban ini.';
+        }
+      }
+  // Memanggil fungsi pertama kali saat halaman dimuat
+      updateSignalStrength();
+
+      // Memperbarui kekuatan sinyal saat ada perubahan
+      window.addEventListener('online', updateSignalStrength);
+      window.addEventListener('offline', updateSignalStrength);
+    });
+</script>
+
+  
+<h1 id="visitorIP">Alamat IP Pengunjung: </h1>
+
+  <script>
+    // Mengambil alamat IP pengunjung
+    function getIP(json) {
+      document.getElementById('visitorIP').textContent = 'Alamat IP: ' + json.ip;
+    }
+
+    // Memuat data dari layanan pihak ketiga yang memberikan informasi alamat IP
+    const script = document.createElement('script');
+    script.src = 'https://api.ipify.org?format=jsonp&callback=getIP';
+    document.head.appendChild(script);
+  </script>
+
+  <p class="contact-title">v2.0</p>
+
+  
+        </section>
+        
+
+      </article>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
