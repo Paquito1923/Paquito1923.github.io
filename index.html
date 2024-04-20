@@ -946,7 +946,15 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
           </figure>
         </section>
 
+<h1>Visitor : <span id="counter">0</span>.</h1>
 
+    <script>
+        // Script untuk menambahkan jumlah pengunjung
+        let counter = localStorage.getItem('counter') || 0;
+        counter++;
+        localStorage.setItem('counter', counter);
+        document.getElementById('counter').innerText = counter;
+	</script>
         
 
 <section class=about-text>
