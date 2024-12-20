@@ -260,10 +260,62 @@ Feel free to edit the HTML and CSS to make it your own. You can also check the R
               <p>
                 Saya adalah seorang conten creator yang belum berpengalaman dalam banyak hal, saya ingin terus belajar dan mendalami ilmu ilmu perkembangan tekhnologi untuk memajukan bangsa dan negara. 🗿
               </p>
-              <audio autoplay loop controls>
+              ChatGPT 4o mini
+
+Masuk
+Anda bilang:
+<audio autoplay loop controls>
         <source src="https://raw.githubusercontent.com/Paquito1923/save/main/those-eyes.mp3" type="audio/mpeg">audio background
               </audio>
             <p>play for music background</p>
+
+Bagaimana agar music yang di putar banyak dan bisa di acak?
+ChatGPT bilang:
+ChatGPT
+Untuk membuat musik yang diputar lebih banyak dan bisa diacak, Anda perlu menambahkan beberapa elemen HTML dan JavaScript. Berikut adalah langkah-langkah untuk mencapai hal tersebut:
+
+Menambahkan beberapa sumber musik
+Anda bisa menambahkan beberapa file musik ke dalam elemen <audio> dengan menambahkan lebih dari satu <source>.
+
+Menggunakan JavaScript untuk memilih lagu secara acak
+Dengan menggunakan JavaScript, Anda dapat memilih file audio secara acak dari array yang berisi URL lagu-lagu yang ingin diputar.
+
+Berikut adalah contoh implementasi untuk memutar musik secara acak dari beberapa file:
+
+HTML + JavaScript
+<audio id="audioPlayer" autoplay loop controls>
+  <source id="audioSource" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>tekan untuk memutar music ramdom</p>
+
+<script>
+  // Daftar lagu yang ingin diputar
+  const tracks = [
+    "https://raw.githubusercontent.com/Paquito1923/save/main/those-eyes.mp3",
+    "https://raw.githubusercontent.com/Paquito1923/save/main/track2.mp3",
+    "https://raw.githubusercontent.com/Paquito1923/save/main/track3.mp3",
+    // Tambahkan lebih banyak URL lagu di sini
+  ];
+
+  // Fungsi untuk memilih lagu secara acak
+  function playRandomTrack() {
+    const randomIndex = Math.floor(Math.random() * tracks.length);
+    const audioPlayer = document.getElementById("audioPlayer");
+    const audioSource = document.getElementById("audioSource");
+    
+    // Mengubah sumber audio ke lagu yang dipilih secara acak
+    audioSource.src = tracks[randomIndex];
+    
+    // Memuat dan memulai lagu
+    audioPlayer.load();
+    audioPlayer.play();
+  }
+
+  // Memanggil fungsi untuk memulai pemutaran lagu acak saat halaman dimuat
+  window.onload = playRandomTrack;
+</script>
         <!--
           - service
         -->
