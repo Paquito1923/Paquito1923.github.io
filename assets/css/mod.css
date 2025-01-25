@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease-in-out;
+}
+.mode-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.mode-sun {
+  background-image: url('light.png');
+  background-size: cover;
+}
+
+.mode-moon {
+  background-image: url('dark.png');
+  background-size: cover;
+}
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.mode-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.mode-icon {
+    display: solid;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.judul-link {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-title {
+  color: #666;
+  font-size: 15px;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+}
+
+.tombol-link {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.tombol-link:hover {
+    background-color: #555;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .container {
+    background-color: #444;
+    border: 1px solid #555;
+}
+
+.dark-mode .mode-icon {
+    background-color: #000;
+}
+
+.dark-mode .tombol-link {
+    background-color: #555;
+}
+
+.dark-mode .contact-title {
+  color: #fff;
+  font-size: 12px;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+
+.dark-mode .tombol-link:hover {
+    background-color: #666;
+}
