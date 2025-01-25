@@ -11,12 +11,12 @@ body {
 }
 
 .mode-sun {
-  background-image: url('light.png');
+  background-image: url('./assets/images/light.png');
   background-size: cover;
 }
 
 .mode-moon {
-  background-image: url('dark.png');
+  background-image: url('./assets/images/dark.png');
   background-size: cover;
 }
 .container {
